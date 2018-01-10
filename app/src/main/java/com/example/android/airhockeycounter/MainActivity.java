@@ -118,6 +118,8 @@ public class MainActivity extends AppCompatActivity {
             displayForPlayerA(scorePlayerA);
             displayForOverallPlayerA(overallScoreViewA);
             displayForOverallPlayerB(overallScoreViewB);
+            String winner = "";
+            displayMessage(winner);
     }
     /**
      * This method displays the given text on the screen.
