@@ -23,9 +23,11 @@ public class MainActivity extends AppCompatActivity {
     public void goal_a(View v) {
         scorePlayerA = scorePlayerA + 1;
         displayForPlayerA(scorePlayerA);
+
         /**
          * when points of Player A reaches 8, one score is added to Player A and player's score resets
          */
+
         if (scorePlayerA == 8) {
             overallScoreViewA = overallScoreViewA + 1;
             scorePlayerA = 0;
@@ -51,10 +53,6 @@ public class MainActivity extends AppCompatActivity {
         scorePlayerA = scorePlayerA + 0;
         displayForPlayerA(scorePlayerA);
     }
-
-    /**
-     * increase the overall score for Player A
-     */
 
     /**
      * Displays the given score for Player A.
@@ -91,14 +89,18 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
     /**
      *
      */
     public void foul_b(View v) {
         scorePlayerB = scorePlayerB + 0;
         displayForPlayerB(scorePlayerB);
-        }
+    }
 
+    /**
+     * Displays the given score for Player B.
+     */
 
     public void displayForPlayerB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.score_b);
@@ -110,17 +112,18 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void reset(View v) {
-            scorePlayerA = 0;
-            scorePlayerB = 0;
-            overallScoreViewA = 0;
-            overallScoreViewB = 0;
-            displayForPlayerB(scorePlayerB);
-            displayForPlayerA(scorePlayerA);
-            displayForOverallPlayerA(overallScoreViewA);
-            displayForOverallPlayerB(overallScoreViewB);
-            String winner = "";
-            displayMessage(winner);
+        scorePlayerA = 0;
+        scorePlayerB = 0;
+        overallScoreViewA = 0;
+        overallScoreViewB = 0;
+        displayForPlayerB(scorePlayerB);
+        displayForPlayerA(scorePlayerA);
+        displayForOverallPlayerA(overallScoreViewA);
+        displayForOverallPlayerB(overallScoreViewB);
+        String winner = "";
+        displayMessage(winner);
     }
+
     /**
      * This method displays the given text on the screen.
      */
@@ -134,6 +137,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * display given overall score for Player A
      */
+
     public void displayForOverallPlayerA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.overall_score_a);
         scoreView.setText(String.valueOf(score));
