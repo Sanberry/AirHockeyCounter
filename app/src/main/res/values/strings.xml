@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AirHockeyCounter</string>
+    <string name="player_name_one">PlayerA</string>
+    <string name="player_name_two">PlayerB</string>
 </resources>

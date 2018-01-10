@@ -24,12 +24,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="50dp"
-                android:backgroundTint="#CC80CBC4"
+                android:layout_marginTop="120dp"
+                android:backgroundTint="@color/colorSemiLightBlue"
                 android:fontFamily="casual"
                 android:onClick="goal_a"
                 android:text="Goal"
-                android:textColor="#163317"
+                android:textColor="@color/colorDarkBlueGreen"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -39,11 +39,11 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
                 android:layout_weight="1"
-                android:backgroundTint="#CCEF9A9A"
+                android:backgroundTint="@color/colorLightSemiPink"
                 android:fontFamily="casual"
                 android:onClick="foul_a"
                 android:text="foul"
-                android:textColor="#331107"
+                android:textColor="@color/colorDarkRed"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -59,8 +59,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:fontFamily="casual"
-                android:text="Player A"
-                android:textColor="#00838F"
+                android:text="@string/player_name_one"
+                android:textColor="@color/colorBlue"
                 android:textSize="35sp"
                 android:textStyle="bold" />
 
@@ -68,7 +68,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="80dp"
                 android:src="@drawable/pusher1" />
         </LinearLayout>
 
@@ -86,12 +86,12 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="120dp"
                     android:fontFamily="casual"
                     android:gravity="center_horizontal"
                     android:text="Score"
                     android:textSize="25sp"
-                    android:textColor="#E57373"
+                    android:textColor="@color/colorPink"
                     android:textStyle="bold"/>
 
                 <TextView
@@ -101,7 +101,7 @@
                     android:fontFamily="casual"
                     android:gravity="center_horizontal"
                     android:text="0"
-                    android:textColor="#000000"
+                    android:textColor="@color/colorBlack"
                     android:textSize="45sp" />
             </LinearLayout>
 
@@ -123,11 +123,11 @@
             android:layout_gravity="center_vertical"
             android:layout_marginRight="15dp"
             android:layout_weight="1"
-            android:backgroundTint="#CCFBe9E7"
+            android:backgroundTint="@color/colorSemiPink"
             android:fontFamily="casual"
             android:onClick="reset"
             android:text="reset"
-            android:textColor="#331107"
+            android:textColor="@color/colorDarkRed"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -146,7 +146,7 @@
                 android:fontFamily="casual"
                 android:gravity="center"
                 android:text="0"
-                android:textColor="#006064"
+                android:textColor="@color/colorDarkAqua"
                 android:textSize="45sp" />
 
             <TextView
@@ -156,7 +156,7 @@
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
                 android:text="-"
-                android:textColor="#000000"
+                android:textColor="@color/colorBlack"
                 android:textSize="45sp" />
 
             <TextView
@@ -169,7 +169,7 @@
                 android:gravity="center"
                 android:layout_marginRight="15dp"
                 android:text="0"
-                android:textColor="#01579B"
+                android:textColor="@color/colorDarkBlue"
                 android:textSize="45sp" />
         </RelativeLayout>
 
@@ -188,7 +188,7 @@
                 android:gravity="center"
                 android:text=""
                 android:fontFamily="casual"
-                android:textColor="#424242"
+                android:textColor="@color/colorDarkGray"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 />
@@ -218,11 +218,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="5dp"
-                android:backgroundTint="#CC80CBC4"
+                android:backgroundTint="@color/colorSemiLightBlue"
                 android:fontFamily="casual"
                 android:onClick="goal_b"
                 android:text="Goal"
-                android:textColor="#163317"
+                android:textColor="@color/colorDarkBlueGreen"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -230,13 +230,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="50dp"
+                android:layout_marginBottom="120dp"
                 android:layout_weight="1"
-                android:backgroundTint="#CCEF9A9A"
+                android:backgroundTint="@color/colorLightSemiPink"
                 android:fontFamily="casual"
                 android:onClick="foul_b"
                 android:text="foul"
-                android:textColor="#331107"
+                android:textColor="@color/colorDarkRed"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -251,7 +251,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="35dp"
+                android:layout_marginBottom="80dp"
                 android:src="@drawable/pusher2" />
 
             <TextView
@@ -259,8 +259,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:fontFamily="casual"
-                android:text="Player B"
-                android:textColor="#0277BD"
+                android:text="@string/player_name_two"
+                android:textColor="@color/colorDarkBlue"
                 android:textSize="35sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -283,18 +283,18 @@
                     android:gravity="center_horizontal"
                     android:text="Score"
                     android:textSize="25sp"
-                    android:textColor="#E57373"
+                    android:textColor="@color/colorPink"
                     android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/score_b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="50dp"
+                    android:layout_marginBottom="120dp"
                     android:fontFamily="casual"
                     android:gravity="center_horizontal"
                     android:text="0"
-                    android:textColor="#000000"
+                    android:textColor="@color/colorBlack"
                     android:textSize="45sp" />
             </LinearLayout>
         </LinearLayout>
