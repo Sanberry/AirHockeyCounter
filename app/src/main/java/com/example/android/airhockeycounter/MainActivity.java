@@ -25,21 +25,23 @@ public class MainActivity extends AppCompatActivity {
         displayForPlayerA(scorePlayerA);
 
         /**
-         * when points of Player A reaches 8, one score is added to Player A and player's score resets
+         * when points of Player A reaches 8, one score is added to Player A and players' score resets
          */
 
         if (scorePlayerA == 8) {
             overallScoreViewA = overallScoreViewA + 1;
             scorePlayerA = 0;
+            scorePlayerB = 0;
             displayForOverallPlayerA(overallScoreViewA);
             displayForPlayerA(scorePlayerA);
+            displayForPlayerB(scorePlayerB);
 
             if (overallScoreViewA > overallScoreViewB) {
-                String winner = "Player\nA\nis winning!";
+                String winner = "Player\n*A*\nis\nwinning";
                 displayMessage(winner);
             }
             if (overallScoreViewA == overallScoreViewB) {
-                String winner = "Even!!\n No one\nis\nwinning!!";
+                String winner = "**Even**\nNo one\nis\nwinning";
                 displayMessage(winner);
             }
         }
@@ -71,20 +73,22 @@ public class MainActivity extends AppCompatActivity {
         scorePlayerB = scorePlayerB + 1;
         displayForPlayerB(scorePlayerB);
         /**
-         * when points of Player B reaches 8, one score is added to Player B and player's score resets
+         * when points of Player B reaches 8, one score is added to Player B and players' score resets
          */
         if (scorePlayerB == 8) {
             overallScoreViewB = overallScoreViewB + 1;
             scorePlayerB = 0;
+            scorePlayerA = 0;
             displayForOverallPlayerB(overallScoreViewB);
             displayForPlayerB(scorePlayerB);
+            displayForPlayerA(scorePlayerA);
 
             if (overallScoreViewB > overallScoreViewA) {
-                String winner = "Player\nB\nis winning!";
+                String winner = "Player\n*B*\nis\nwinning";
                 displayMessage(winner);
             }
             if (overallScoreViewB == overallScoreViewA) {
-                String winner = "Even!!\n No one\nis\nwinning!!";
+                String winner = "**Even**\nNo one\nis\nwinning";
                 displayMessage(winner);
             }
         }
