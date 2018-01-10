@@ -174,9 +174,9 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:orientation="vertical">
 
 
@@ -184,7 +184,7 @@
                 android:id="@+id/winner_player"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center_horizontal"
+                android:gravity="center"
                 android:text=""
                 android:fontFamily="casual"
                 android:textColor="#424242"

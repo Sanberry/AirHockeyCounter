@@ -1,15 +1,15 @@
 package com.example.android.airhockeycounter;
 
+import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    int scorePlayerA = 0;
-    int scorePlayerB = 0;
-    int overallScoreViewA = 0;
-    int overallScoreViewB = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    int scorePlayerA = 0;
+    int scorePlayerB = 0;
+    int overallScoreViewA = 0;
+    int overallScoreViewB = 0;
     /**
      * increase the point by 1 for Player A
      */
@@ -35,15 +39,14 @@ public class MainActivity extends AppCompatActivity {
             displayForOverallPlayerA(overallScoreViewA);
             displayForPlayerA(scorePlayerA);
             displayForPlayerB(scorePlayerB);
-
-            if (overallScoreViewA > overallScoreViewB) {
-                String winner = "Player\n*A*\nis\nwinning";
-                displayMessage(winner);
-            }
-            if (overallScoreViewA == overallScoreViewB) {
-                String winner = "**Even**\nNo one\nis\nwinning";
-                displayMessage(winner);
-            }
+                if (overallScoreViewA > overallScoreViewB) {
+                    String winner = "Player *A*\nis winning";
+                    displayMessage(winner);
+                }
+                if (overallScoreViewA == overallScoreViewB) {
+                    String winner = "Ouch\n**Even**";
+                    displayMessage(winner);
+                }
         }
     }
 
@@ -84,11 +87,11 @@ public class MainActivity extends AppCompatActivity {
             displayForPlayerA(scorePlayerA);
 
             if (overallScoreViewB > overallScoreViewA) {
-                String winner = "Player\n*B*\nis\nwinning";
+                String winner = "Player *B*\nis winning";
                 displayMessage(winner);
             }
             if (overallScoreViewB == overallScoreViewA) {
-                String winner = "**Even**\nNo one\nis\nwinning";
+                String winner = "Ouch\n**Even**";
                 displayMessage(winner);
             }
         }
